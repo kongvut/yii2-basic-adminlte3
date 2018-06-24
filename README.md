@@ -130,6 +130,18 @@ return [
 - Check and edit the other files in the `config/` directory to customize your application as required.
 - Refer to the README in the `tests` directory for information specific to basic application tests.
 
+**Database migrations:**
+
+The last thing you need to do is updating your database schema by applying the migrations. Make sure that you have properly configured db application component and run the following command:
+
+```
+$ php yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations
+$ php yii migrate --migrationPath=@yii/rbac/migrations
+```
+
+**Users system List of actions:** https://github.com/dektrium/yii2-user/blob/master/docs/available-actions.md
+**Rbac system:** https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/available-menu.md
+
 
 TESTING
 -------
