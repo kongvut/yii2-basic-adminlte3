@@ -221,7 +221,7 @@ app\assets\AppAsset::register($this);
         <!-- Content Header (Page header) -->
         <div class="content-header">
             <div class="container-fluid">
-                <div class="row mb-1">
+                <div class="row">
                     <div class="col-md-12">
                         <nav aria-label="breadcrumb">
                             <?= \app\widgets\Breadcrumbs::widget([
