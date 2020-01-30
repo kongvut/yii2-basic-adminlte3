@@ -11,14 +11,23 @@ use yii\web\AssetBundle;
 
 class AdminleAsset extends AssetBundle
 {
-    public $sourcePath = '@app/themes/adminlte3/dist';
+    public $sourcePath = '@vendor/almasaeed2010/adminlte';
     public $css = [
-        'css/adminlte.min.css',
+        'dist/css/adminlte.min.css',
     ];
 
     public $js = [
-        'js/adminlte.js',
-        'plugins/bootstrap/js/bootstrap.bundle.js'
+        'dist/js/adminlte.js',
+        'plugins/bootstrap/js/bootstrap.min.js'
+    ];
+
+    public $publishOptions = [
+        "only" => [
+            "dist/js/*",
+            "dist/css/*",
+            "plugins/bootstrap/js/*",
+        ],
+
     ];
 
     public $depends = [

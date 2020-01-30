@@ -23,14 +23,11 @@ $config = [
                 ],
             ],
         ],
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
-        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'dektrium\user\models\User',
+            'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -63,58 +60,7 @@ $config = [
     ],
     'params' => $params,
     'modules' => [
-        'user' => [
-            'class' => 'dektrium\user\Module',
-            'enableUnconfirmedLogin' => false,
-            //'enableRegistration' => false,
-            //'cost' => 12,
-            'admins' => ['admin'],
-            'mailer' => [
-                'sender' => 'no-reply@myhost.com', // or ['no-reply@myhost.com' => 'Sender name']
-                'welcomeSubject' => 'Welcome subject',
-                'confirmationSubject' => 'Confirmation subject',
-                'reconfirmationSubject' => 'Email change subject',
-                'recoverySubject' => 'Recovery subject',
-            ],
-            /*
-                    'modelMap' => [
-                        //'User' => 'app\models\User',
-                        'LoginForm' => 'app\models\UserLogin',
-                        'RecoveryForm' => 'app\models\RecoveryForm',
-                        'RegistrationForm' => 'app\models\RegistrationForm',
-                        'ResendForm' => 'app\models\ResendForm',
-                    ],
-            */
-        ],
-        'admin' => [
-            'class' => 'mdm\admin\Module',
-            'layout' => 'left-menu', // avaliable value 'left-menu', 'right-menu' and 'top-menu'
-            'mainLayout' => '@app/views/layouts/main.php',
-            'controllerMap' => [
-                'assignment' => [
-                    'class' => 'mdm\admin\controllers\AssignmentController',
-                    'userClassName' => 'dektrium\user\models\User',
-                    'idField' => 'id'
-                ]
-            ],
-            'menus' => [
-                'assignment' => [
-                    'label' => 'Grand Access' // change label
-                ],
-                //'route' => null, // disable menu
-            ],
-        ],
-        'as access' => [
-            'class' => 'mdm\admin\components\AccessControl',
-            'allowActions' => [
-                '*',
-                // The actions listed here will be allowed to everyone including guests.
-                // So, 'admin/*' should not appear here in the production, of course.
-                // But in the earlier stages of your development, you may probably want to
-                // add a lot of actions here until you finally completed setting up rbac,
-                // otherwise you may not even take a first step.
-            ]
-        ],
+
     ],
 ];
 

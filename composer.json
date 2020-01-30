@@ -14,38 +14,25 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "~2",
-        "yiisoft/yii2-bootstrap": "~2",
-        "yiisoft/yii2-swiftmailer": "~2",
-
-        "kartik-v/yii2-widget-select2": "@dev",
-        "kartik-v/yii2-popover-x": "*",
-        "kartik-v/yii2-grid": "@dev",
-        "kartik-v/yii2-dropdown-x": "*",
-        "kartik-v/yii2-detail-view": "*",
-        "kartik-v/yii2-widgets": "*",
-        "kartik-v/yii2-checkbox-x": "*",
-        "kartik-v/yii2-dialog": "*",
-
-        "xj/yii2-bootbox-widget": "*",
-        "yiisoft/yii2-jui": "^2.0",
-        "yiisoft/yii2-imagine": "^2.1",
-        "bizley/quill": "^2.0",
-        "yii2mod/yii2-markdown": "*",
-        "dektrium/yii2-user": "^0.9.14",
-        "mdmsoft/yii2-admin": "~2",
-        "bower-asset/fontawesome": "~4.7"
+        "php": ">=5.6.0",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "bower-asset/fontawesome": "~5",
+        "almasaeed2010/adminlte": "~3.0"
 
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2",
-        "yiisoft/yii2-gii": "~2",
-        "yiisoft/yii2-faker": "~2",
-
-        "codeception/base": "^2.2.3",
-        "codeception/verify": "~0.3.1",
-        "codeception/specify": "~0.4.3"
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.1.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/codeception": "^4.0",
+        "codeception/verify": "~0.5.0 || ~1.1.0",
+        "codeception/specify": "~0.4.6",
+        "symfony/browser-kit": ">=2.7 <=4.2.4",
+        "codeception/module-filesystem": "^1.0.0",
+        "codeception/module-yii2": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
     },
     "config": {
         "process-timeout": 1800,

@@ -13,9 +13,6 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
-        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -31,12 +28,7 @@ $config = [
     ],
     'params' => $params,
     'modules' => [
-        'admin' => [
-            'class' => 'mdm\admin\Module',
-        ],
-        'user' => [
-            'class' => 'dektrium\user\Module',
-        ],
+
     ],
     /*
     'controllerMap' => [
