@@ -1,10 +1,9 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
+<a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 + AdminLTE 3 (Bootstrap 4) Basic Project Template</h1>
-    <br>
-</p>
+</a>
+<h2 align="center">Yii 2 + AdminLTE 3 (Bootstrap 4)</h2>
+<h3>Yii2 Basic Project Template Build on AssetBundle (No CDN/Import CSS,JS Files)</h3>
+<br>
 
 ![ss](https://i.imgur.com/4LnfO1T.png)
 
@@ -20,22 +19,6 @@ features to your application.
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
-DIRECTORY STRUCTURE
--------------------
-
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
-
-
 
 REQUIREMENTS
 ------------
@@ -49,17 +32,26 @@ INSTALLATION
 ### Install via Composer
 
 ```
-git clone https://github.com/kongvut/yii2-basic-adminlte3
-cd yii2-basic-adminlte3
-composer install
+$ git clone https://github.com/kongvut/yii2-basic-adminlte3
+$ cd yii2-basic-adminlte3
+$ composer install
 ```
 
+Run Server Development
 ~~~
-http://localhost/basic/web/
+$ ./yii serve
+Server started on http://localhost:8080
 ~~~
 
 CONFIGURATION
 -------------
+
+### Theme Structure
+
+      themes/adminlte3/views/layouts/main.php       contains base layout
+      views/layouts/app.layout.php                  contains main app layout
+      views/layouts/header.php                      contains header menu for app app layout
+      views/layouts/menu.php                        contains menu for app app layout
 
 ### Database
 

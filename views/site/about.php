@@ -5,14 +5,26 @@
 use yii\helpers\Html;
 
 $this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = ['label' => "Home", 'url' => '/'];
+$this->params['breadcrumbs'][] = ['label' => "Module", 'url' => '/site'];
+$this->params['breadcrumbs'][] = ['label' => $this->title, 'active' => true];
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
+<?php $this->beginContent('@app/views/layouts/app.layout.php'); ?>
 
-    <code><?= __FILE__ ?></code>
+<div class="card">
+
+    <div class="card-header">
+        <?= Html::encode($this->title) ?>
+    </div>
+
+    <div class="card-body">
+        <p>
+            This is the About page. You may modify the following file to customize its content:
+        </p>
+
+        <code><?= __FILE__ ?></code>
+    </div>
 </div>
+
+<?php $this->endContent(); ?>

@@ -8,7 +8,13 @@
 use yii\helpers\Html;
 
 $this->title = $name;
+$this->params['breadcrumbs'][] = ['label' => "Home", 'url' => '/'];
+$this->params['breadcrumbs'][] = ['label' => "Module", 'url' => '/site'];
+$this->params['breadcrumbs'][] = ['label' => $this->title, 'active' => true];
 ?>
+
+<?php $this->beginContent('@app/views/layouts/app.layout.php'); ?>
+
 <div class="site-error">
 
     <div class="row mb1">
@@ -29,3 +35,5 @@ $this->title = $name;
     </div>
 
 </div>
+
+<?php $this->endContent(); ?>
